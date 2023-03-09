@@ -1,20 +1,10 @@
 ﻿namespace QairService.Models
 {
-    public class Qair
+    public class Qair : QairBase
     {
-        public int Id { get; set; }
-        public string? Name { get; set; }
-        public User? User { get; set; }
-
-        public Qair(string name)
+        List<Question>? Questions {get; set;}
+        public Qair(string name,User owner) : base(name,  owner )
         {
-            Name = name;
         }
-
-        public void Assign(User user)
-        {
-            User = user;
-        }
-
     }
 }
