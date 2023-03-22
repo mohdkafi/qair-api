@@ -1,20 +1,23 @@
-﻿namespace QairService.Models
+﻿using QairService.DB.Models;
+
+namespace QairService.Models
 {
-    public class Qair
+    public class Qair : QairBase
     {
-        public int Id { get; set; }
-        public string? Name { get; set; }
-        public User? User { get; set; }
-
-        public Qair(string name)
+        List<Question>? Questions {get; set;}
+        public Qair(string name,User owner) : base(name,  owner )
         {
-            Name = name;
         }
-
-        public void Assign(User user)
+        public QairDTO Map()
         {
-            User = user;
+            var qair = new QairDTO
+            {
+                Id = Id,
+                Name = Name,
+                //Owner = Owner,
+                //User = User
+            };
+            return qair;
         }
-
     }
 }

@@ -2,10 +2,10 @@
 
 namespace QairService.Models
 {
-    public abstract class Option<T>
+    public class Option 
     {
-        protected T? Value;
-        public abstract void setValue(T value);
-        public abstract T getValue();
+        public string? Value { get; set; }
+        public OptionType OptionType { get; set; }
+
     }
 }
