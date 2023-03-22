@@ -10,7 +10,7 @@ namespace QairService.DB.Models
 {
     [Table(name: "QuestionInstance")]
 
-    internal class QuestionInstanceDTO
+    public class QuestionInstanceDTO
     {
             [Key]
             [Required]

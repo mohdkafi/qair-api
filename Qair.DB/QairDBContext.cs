@@ -16,7 +16,7 @@ namespace QairService.DB
         }
         DbSet<UserDTO> Users { get; set; }
         DbSet<QuestionDTO> Questions { get; set; }
-        DbSet<QairDTO> Qairs { get; set; }
+        public DbSet<QairDTO> Qairs { get; set; }
         DbSet<QairInstanceDTO> QairInstances { get; set; }
         DbSet<AnswerDTO> Answers { get; set; }
         DbSet<OptionDTO> Options { get; set; }

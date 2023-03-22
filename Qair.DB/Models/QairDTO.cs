@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace QairService.DB.Models
 {
     [Table(name:"Qair")]
-    internal class QairDTO
+    public class QairDTO
     {
         [Key]
         [Required]
@@ -24,6 +24,6 @@ namespace QairService.DB.Models
         public virtual UserDTO? User { get; set; }
         public int? UserId { get; set; }
 
-        public virtual ICollection<QuestionDTO> Questions { get;}
+        public virtual ICollection<QuestionDTO>? Questions { get;}
     }
 }

@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace QairService.DB.Models
 {
     [Table(name:"Option")]
-    internal class OptionDTO
+    public class OptionDTO
     {
         [Key]
         [Required]

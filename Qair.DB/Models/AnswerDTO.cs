@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace QairService.DB.Models
 {
     [Table(name:"Answer")]
-    internal class AnswerDTO
+    public class AnswerDTO
     {
         [Key]
         [Required]
